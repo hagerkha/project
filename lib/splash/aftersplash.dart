@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../login.dart';
+import '../service/presentaion/screen/login_screen.dart';
 import 'onboarding_screen.dart';
 
 class AfterSplashScreen extends StatelessWidget {
@@ -46,7 +46,7 @@ class AfterSplashScreen extends StatelessWidget {
             ),
           ),
 
-          // Buttons at the bottom
+          // Buttons at t[he bottom
           Positioned(
             bottom: 40,
             left: 20,
@@ -81,7 +81,7 @@ class AfterSplashScreen extends StatelessWidget {
                   onPressed: () {
                     Navigator.pushReplacement(
                       context,
-                      MaterialPageRoute(builder: (context) => const LogIn()),
+                      MaterialPageRoute(builder: (context) => const LoginScreen()),
                     );
                   },
                   style: ElevatedButton.styleFrom(

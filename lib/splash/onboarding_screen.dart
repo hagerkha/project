@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../login.dart';
+import '../service/presentaion/screen/login_screen.dart';
 import 'constants.dart';
 
 class OnboardingScreen extends StatefulWidget {
@@ -43,7 +43,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   void _navigateToLogin() {
     Navigator.pushReplacement(
       context,
-      MaterialPageRoute(builder: (context) => const LogIn()),
+      MaterialPageRoute(builder: (context) => const LoginScreen()),
     );
   }
 
